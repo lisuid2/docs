@@ -1,7 +1,12 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
+import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
+
+const ogDescription = "solitude主题";
+const ogUrl = "https://docs.lisui.top"
+const ogImage = "https://docs.anheyu.com/cover.jpg";
 
 export default defineConfig({
-   //base:  '/docs/',
+  //base:  '/docs/',
   title: "Lisui Docs",
   description: "一个 VitePress 网站",
   lang: "zh",
@@ -59,15 +64,23 @@ export default defineConfig({
             text: "📰 特别页面",
             collapsed: false,
             items: [
-              { text: "关于", link: "/5.special/0.md" },
-              { text: "友情链接", link: "/5.special/1.md" },
-              { text: "即刻短文", link: "/5.special/2.md" },
-              { text: "我的装备", link: "/5.special/3.md" },
-              { text: "友链鱼塘", link: "/5.special/4.md" },
-              { text: "音乐馆", link: "/5.special/5.md" },
-              { text: "在线工具", link: "/5.special/6.md" },
-              { text: "豆瓣", link: "/5.special/7.md" },
-              { text: "弹幕留言板", link: "/6.special/7.md" }
+              { text: "关于", link: "/5.pages/1.about.md" },
+              { text: "友情链接", link: "/5.pages/2.links.md" },
+              { text: "即刻短文", link: "/5.pages/3.essay.md" },
+              { text: "我的装备", link: "/5.pages/4.equipmengt.md" },
+              { text: "友链鱼塘", link: "/5.pages/5.fclrcle.md" },
+              { text: "音乐馆", link: "/5.pages/6.music.md" },
+              { text: "在线工具", link: "/5.pages/6.md" },
+              { text: "豆瓣", link: "/5.pages/7douban.md" },
+              { text: "弹幕留言板", link: "/5.pages/8.message.md" }
+            ]
+          },
+          {
+            text: "👍 第三方",
+            collapsed: false,
+            items: [  
+              { text: "示例链接", link: "/6.third_party/0.tianliai.md" }, 
+              { text: "示例链接", link: "/6.third_party/1.postchat.md" }, 
             ]
           }
         ]
@@ -100,5 +113,5 @@ export default defineConfig({
       message: `Released under the MIT License.`,
       copyright: "Copyright © 2024 Sui",
     }
-  }
-})
+  },
+});
