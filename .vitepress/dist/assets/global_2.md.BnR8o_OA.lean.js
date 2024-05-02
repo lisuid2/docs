@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.D4kqST2g.js";const o=JSON.parse('{"title":"扩展","description":"","frontmatter":{"title":"扩展"},"headers":[],"relativePath":"global/2.md","filePath":"global/2.md"}'),l={name:"global/2.md"},t=n("",2),h=[t];function p(k,e,E,d,r,g){return a(),i("div",null,h)}const y=s(l,[["render",p]]);export{o as __pageData,y as default};
