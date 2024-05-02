@@ -79,8 +79,8 @@ export default defineConfig({
             text: "👍 第三方",
             collapsed: false,
             items: [  
-              { text: "示例链接", link: "/6.third_party/0.tianliai.md" }, 
-              { text: "示例链接", link: "/6.third_party/1.postchat.md" }, 
+              { text: "Tianli文章Ai摘要接", link: "/6.third_party/0.tianliai.md" }, 
+              { text: "PostChat聊天", link: "/6.third_party/1.postchat.md" }, 
             ]
           }
         ]
