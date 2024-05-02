@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+   //base:  '/docs/',
   title: "Lisui Docs",
   description: "一个 VitePress 网站",
   lang: "zh",
