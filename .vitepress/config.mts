@@ -1,12 +1,10 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  //base:  '/docs/',
   title: "Lisui Docs",
   description: "一个 VitePress 网站",
+  lang: "zh",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
       { text: '博客', link: 'https://lisui.top' }
@@ -24,35 +22,53 @@ export default defineConfig({
             text: "🚀 快速开始",
             collapsed: false,
             items: [
-              { text: "404 页面配置", link: "/page/404" },
-              { text: " front-matter", link: "/page/front-matter" },
-              
+              { text: "404 页面配置", link: "/1.page/404" },
+              { text: "front-matter", link: "/1.page/front-matter" },
             ],
           },
           {
             text: "🛠 配置",
             collapsed: false,
             items: [
-              { text: "基本", link: "/global/1.global.md" },
-              { text: "扩展", link: "/global/2.extra.md" },
-              { text: "进阶", link: "/global/" }
+              { text: "基本", link: "/2.global/1.global.md" },
+              { text: "扩展", link: "/2.global/2.extra.md" },
+              { text: "进阶", link: "/2.global/3.advanced.md" }
             ],
           },
           {
-            text: "进阶配置 🚀",
+            text: "✉ 评论系统",
             collapsed: false,
             items: [
-              { text: "全局配置", link: "/advanced/" },
-              { text: "友情链接配置", link: "/page/links" },
-              { text: "留言板页面配置", link: "/page/message" },
-              { text: "我的装备页面配置", link: "/page/equipment" },
-              { text: "关于页面配置", link: "/page/about" },
-              { text: "音乐馆页配置", link: "/page/music" },
-              { text: "朋友圈页面配置", link: "/page/fcircle" },
-              { text: "相册页面配置", link: "/page/album" },
-              { text: "首页即刻说说页面配置", link: "/page/essay" },
-            ],
+              { text: "基本配置", link: "/3.comments/0.md" },
+              { text: "Valine", link: "/3.comments/1.valine.md" },
+              { text: "Waline", link: "/3.comments/2.waline.md" },
+              { text: "Twikoo", link: "/3.comments/3.twikoo.md" },
+              { text: "Artalk", link: "/3.comments/4.artalk.md" },
+            ]
           },
+          {
+            text: "🔍 搜索",
+            collapsed: false,
+            items: [
+              { text: "本地搜索", link: "/4.search/0.md" },
+              { text: "Algolia搜索", link: "/4.search/1.algolia.md" }
+            ]
+          },
+          {
+            text: "📰 特别页面",
+            collapsed: false,
+            items: [
+              { text: "关于", link: "/5.special/0.md" },
+              { text: "友情链接", link: "/5.special/1.md" },
+              { text: "即刻短文", link: "/5.special/2.md" },
+              { text: "我的装备", link: "/5.special/3.md" },
+              { text: "友链鱼塘", link: "/5.special/4.md" },
+              { text: "音乐馆", link: "/5.special/5.md" },
+              { text: "在线工具", link: "/5.special/6.md" },
+              { text: "豆瓣", link: "/5.special/7.md" },
+              { text: "弹幕留言板", link: "/6.special/7.md" }
+            ]
+          }
         ]
       },
     ],
@@ -79,5 +95,9 @@ export default defineConfig({
         },
       },
     },
+    footer: {
+      message: `Released under the MIT License.`,
+      copyright: "Copyright © 2024 Sui",
+    }
   }
 })
