@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   //base:  '/docs/',
-  title: "📚Lisui Docs",
+  title: "Lisui Docs",
   description: "一个 VitePress 网站",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -34,7 +34,8 @@ export default defineConfig({
             collapsed: false,
             items: [
               { text: "基本", link: "/global/1.global.md" },
-              { text: "扩展", link: "/global/2.md" },
+              { text: "扩展", link: "/global/2.extra.md" },
+              { text: "进阶", link: "/global/" }
             ],
           },
           {
