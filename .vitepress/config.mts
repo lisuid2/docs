@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:  '/docs/',
+  //base:  '/docs/',
   title: "📚Lisui Docs",
   description: "一个 VitePress 网站",
   themeConfig: {
