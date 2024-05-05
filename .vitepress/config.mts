@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 
 const ogDescription = "solitude主题";
-const ogUrl = "https://docs.lisui.top"
+const ogUrl = "https://docs.lisui.top";
 const ogImage = "https://docs.anheyu.com/cover.jpg";
 
 export default defineConfig({
@@ -89,29 +89,17 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
-    // 设置搜索框的样式
     search: {
-      provider: "local",
+      provider: 'algolia',
       options: {
-        translations: {
-          button: {
-            buttonText: "搜索文档",
-            buttonAriaLabel: "搜索文档",
-          },
-          modal: {
-            noResultsText: "无法找到相关结果",
-            resetButtonTitle: "清除查询条件",
-            footer: {
-              selectText: "选择",
-              navigateText: "切换",
-            },
-          },
-        },
-      },
+        appId: 'BKA735C3I3',
+        apiKey: '2ce993c7a2d6def6bb3995197d66878d',
+        indexName: '理随'
+      }
     },
     footer: {
       message: `Released under the MIT License.`,
       copyright: "Copyright © 2024 Sui",
     }
-  },
+  }
 });

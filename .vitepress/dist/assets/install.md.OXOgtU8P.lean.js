@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a4 as e}from"./chunks/framework.D4kqST2g.js";const u=JSON.parse('{"title":"主题安装","description":"","frontmatter":{"title":"主题安装"},"headers":[],"relativePath":"install.md","filePath":"install.md"}'),t={name:"install.md"},l=e("",38),h=[l];function n(o,p,d,r,c,k){return a(),i("div",null,h)}const F=s(t,[["render",n]]);export{u as __pageData,F as default};
